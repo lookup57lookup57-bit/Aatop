@@ -12,7 +12,7 @@ from urllib.parse import urlparse
 API_ID = 26038836
 API_HASH = "25f462e2a8517df5014a653c39cc58ca"
 BOT_TOKEN = "8655031099:AAHZHHNDDLZtS5e48KtmpXLaDs1p0PYPgjc" # Replace with your Bot Token
-ADMIN_ID = [7935621079, 8496671308, 1308204344, 7856977111, 7029965057, 5295792382, 1965289355, 8467239599, 7249106493, 7292047135, 8368859527, 7582867285] # Replace with your Admin ID(s)
+ADMIN_ID = [7935621079, 7708627627, 1308204344, 7856977111, 7029965057, 5295792382, 1965289355, 8467239599, 7249106493, 7292047135, 8368859527, 7582867285] # Replace with your Admin ID(s)
 GROUP_ID = -1003200643667 # Replace with your Group ID
 
 # Files
@@ -397,7 +397,7 @@ async def can_use(user_id, chat):
 def get_cc_limit(access_type, user_id=None):
     # Check if user is admin first
     if user_id and user_id in ADMIN_ID:
-        return 2000
+        return 2000000
     if access_type in ["premium_private", "premium_group"]:
         return 500
     elif access_type == "group_free":
